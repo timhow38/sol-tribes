@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#MB",
+    "___",
+    "OiO"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:writable_book"
+    },
+    "M": {
+      "item": "minecraft:map"
+    },
+    "B": {
+      "item": "minecraft:brewing_stand"
+    },
+    "_": {
+      "tag": "minecraft:slabs"
+    },
+    "O": {
+      "tag": "minecraft:logs"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "soltribes:tribe_table",
+    "count": 1
+  }
+}
