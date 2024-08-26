@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "me.thepond.soltribes.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "ClientPlayerInteractionManagerMixin",
+    "InventoryScreenMixin",
+    "ScreenAccessor"
+  ]
+}

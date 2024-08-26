@@ -1,31 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "tribes",
+	"id": "soltribes",
 	"version": "${version}",
-	"name": "Tribes",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "SOL - Tribes",
+	"description": "Providing tools for you to join together to create settlements.",
 	"authors": [
-		"Me!"
+		"thepond"
 	],
+	"accessWidener": "soltribes.accesswidener",
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"website": "https://www.koibois.com",
+		"discord": "thepond"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/tribes/icon.png",
+	"icon": "assets/soltribes/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"me.thepond.Tribes"
+			"me.thepond.soltribes.SOLTribes"
 		],
 		"client": [
-			"me.thepond.TribesClient"
+			"me.thepond.soltribes.SOLTribesClient"
 		]
 	},
 	"mixins": [
-		"tribes.mixins.json",
+		"soltribes.mixins.json",
 		{
-			"config": "tribes.client.mixins.json",
+			"config": "soltribes.client.mixins.json",
 			"environment": "client"
 		}
 	],

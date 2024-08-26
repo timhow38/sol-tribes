@@ -16,16 +16,24 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven {
+		url "https://maven.terraformersmc.com/releases"
+	}
+	maven { url 'https://jitpack.io' }
 }
 
 loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"tribes" {
+		"soltribes" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
+	}
+
+	mixin {
+		accessWidenerPath = file("src/main/resources/soltribes.accesswidener")
 	}
 
 }
@@ -38,7 +46,12 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+	// Add depedency from file libs
+	modImplementation files("libs/solregions-2.1.0.jar")
+
+	modCompileOnly "com.terraformersmc:modmenu:7.2.2"
+	modLocalRuntime "com.terraformersmc:modmenu:7.2.2"
 }
 
 processResources {
