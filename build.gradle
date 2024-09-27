@@ -48,7 +48,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Add depedency from file libs
-	modImplementation files("libs/solregions-2.1.0.jar")
+	modImplementation files("libs/solregions-${project.solregions_version}.jar")
 
 	modCompileOnly "com.terraformersmc:modmenu:7.2.2"
 	modLocalRuntime "com.terraformersmc:modmenu:7.2.2"
