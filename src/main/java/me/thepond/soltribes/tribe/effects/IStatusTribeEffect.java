@@ -18,7 +18,7 @@ public interface IStatusTribeEffect extends ITribeEffect {
         for (TribeMember tribeMember : tribeSettlement.getTribeMembersInRange()) {
             ServerPlayerEntity player = world.getServer().getPlayerManager().getPlayer(tribeMember.getTribeMemberUUID());
             if (player != null) {
-                player.addStatusEffect(new StatusEffectInstance(getStatusEffect(), -1, 1));
+                player.addStatusEffect(new StatusEffectInstance(getStatusEffect(), -1, 1, false, false));
             }
         }
     }
